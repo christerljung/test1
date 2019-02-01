@@ -8,3 +8,13 @@ c:\users\administratör\source\repos\paint\paint\bin\Debug\paint.exe
 c:\users\administratör\source\repos\paint\paint\bin\Debug\paint.pdb
 c:\users\administratör\source\repos\paint\paint\obj\Debug\paint.exe
 c:\users\administratör\source\repos\paint\paint\obj\Debug\paint.pdb
+C:\Users\clj01\Documents\Visual Studio 2017\Projects\test1\paint\bin\Debug\paint.exe.config
+C:\Users\clj01\Documents\Visual Studio 2017\Projects\test1\paint\bin\Debug\paint.exe
+C:\Users\clj01\Documents\Visual Studio 2017\Projects\test1\paint\bin\Debug\paint.pdb
+C:\Users\clj01\Documents\Visual Studio 2017\Projects\test1\paint\obj\Debug\paint.csprojResolveAssemblyReference.cache
+C:\Users\clj01\Documents\Visual Studio 2017\Projects\test1\paint\obj\Debug\paint.Form1.resources
+C:\Users\clj01\Documents\Visual Studio 2017\Projects\test1\paint\obj\Debug\paint.Properties.Resources.resources
+C:\Users\clj01\Documents\Visual Studio 2017\Projects\test1\paint\obj\Debug\paint.csproj.GenerateResource.Cache
+C:\Users\clj01\Documents\Visual Studio 2017\Projects\test1\paint\obj\Debug\paint.csproj.CoreCompileInputs.cache
+C:\Users\clj01\Documents\Visual Studio 2017\Projects\test1\paint\obj\Debug\paint.exe
+C:\Users\clj01\Documents\Visual Studio 2017\Projects\test1\paint\obj\Debug\paint.pdb

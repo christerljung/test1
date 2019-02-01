@@ -9,7 +9,7 @@ using System.Drawing.Drawing2D;
 
 namespace paint
 {
-    class PaintPanel: Panel
+    class PaintPanelPen: Panel
     {
         bool draw = false;
         int pX = -1;
@@ -19,30 +19,25 @@ namespace paint
         Bitmap drawing;
         bool redo = false;
 
-        public PaintPanel()
+        public PaintPanelPen()
         {
             this.BackColor = Color.Azure;
             drawing = new Bitmap(this.Width, this.Height, this.CreateGraphics());
             Graphics.FromImage(drawing).Clear(Color.White);
             color1 = Color.Black;
         }
-
         protected override void OnMouseUp(MouseEventArgs e)
         {
             draw = false;
         }
-
         protected override void OnMouseDown(MouseEventArgs e)
         {
             draw = true;
             pX = e.X;
-            pY = e.Y;
-            base.OnClick(e);
+            pY = e.Y;        
         }
-
         protected override void OnMouseMove (MouseEventArgs e)
         {
-
             if (draw)
             {             
                 Graphics panel = Graphics.FromImage(drawing);

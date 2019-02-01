@@ -14,29 +14,32 @@ namespace paint
     public partial class Form1 : Form
     {
         bool draw = false;
-
         int pX = -1;
         int pY = -1;
         Color color1 = new Color();
         int penSize =7;
         Bitmap drawing;
         bool redo = false;
-        PaintPanel pn = new PaintPanel();
+        PaintPanelCircles circles = new PaintPanelCircles();
+        PaintPanelRect rn = new PaintPanelRect();
+
         public Form1()
         {
             InitializeComponent();
-
             drawing = new Bitmap(panel1.Width, panel1.Height, panel1.CreateGraphics());
             Graphics.FromImage(drawing).Clear(Color.White);
             color1 = Color.Black;
-            this.Controls.Add(pn);
+            this.Controls.Add(circles);
+            circles.Left = 200;
+            circles.Top = 300;
+            this.Controls.Add(rn);
+           rn.Left = 200;
+            rn.Top = 100;
         }
-        
-
+       
         private void panel1_MouseDown(object sender, MouseEventArgs e)
         {
             draw = true;
-
             pX = e.X;
             pY = e.Y;
         }

@@ -52,10 +52,16 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="PaintPanel.cs">
+    <Compile Include="FigurePanel.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="PaintPanelRect.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PaintPanelPen.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PaintPanelCircles.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Program.cs" />
