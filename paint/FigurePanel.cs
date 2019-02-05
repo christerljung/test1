@@ -15,7 +15,7 @@ namespace paint
        protected Point startPos;      // mouse-down position
        protected Point currentPos;    // current mouse position
        protected bool drawing;        // busy drawing
-       protected List<Rectangle> Figures = new List<Rectangle>();  // previous Figures
+       protected List<Rectangle> figures = new List<Rectangle>();  // previous Figures
 
         public FigurePanel()
         {
@@ -41,20 +41,6 @@ namespace paint
             currentPos = e.Location;
             if (drawing) this.Invalidate();
         }
-        protected override void OnMouseUp(MouseEventArgs e)
-        {
-            //if (drawing)
-            //{
-            //    drawing = false;
-            //    var rc = getRectangle();
-            //    if (rc.Width > 0 && rc.Height > 0) Figures.Add(rc);
-            //    this.Invalidate();
-            //}
-        }
-        protected override void OnPaint(PaintEventArgs e)
-        {
-            //if (Figures.Count > 0) e.Graphics.DrawFigures(Pens.Black, Figures.ToArray());
-            //if (drawing) e.Graphics.DrawRectangle(Pens.Red, getRectangle());
-        }
+       
     }
 }
