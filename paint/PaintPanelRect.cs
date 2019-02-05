@@ -17,13 +17,13 @@ namespace paint
             {
                 drawing = false;
                 var rc = getRectangle();
-                if (rc.Width > 0 && rc.Height > 0) rectangles.Add(rc);
+                if (rc.Width > 0 && rc.Height > 0) figures.Add(rc);
                 this.Invalidate();
             }
         }
         protected override void OnPaint(PaintEventArgs e)
         {
-            if (rectangles.Count > 0) e.Graphics.DrawRectangles(Pens.Black, rectangles.ToArray());
+            if (figures.Count > 0) e.Graphics.DrawRectangles(Pens.Black, figures.ToArray());
             if (drawing) e.Graphics.DrawRectangle(Pens.Red, getRectangle());
         }
     }
